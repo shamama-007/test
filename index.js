@@ -12,6 +12,11 @@ app.get("/api/v1/data", async (req, res) => {
 	res.json({data})
 });
 
+
+app.get("/api/v1/get", async (req, res) => {
+	res.json({success: "true", message: "ok"})
+});
+
 app.listen(process.env.PORT, () => {
 	console.log(`SERVER IS LISTERN http://localhost:${
 		process.env.PORT
